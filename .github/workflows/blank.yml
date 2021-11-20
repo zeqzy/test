@@ -30,11 +30,11 @@ jobs:
         
       - name: stop running services
         run: |
-          systemctl stop docker
-          systemctl stop containerd
-          systemctl stop mono-xsp4
-          systemctl stop php7.4-fpm
-          systemctl stop php8.0-fpm
-          systemctl stop snapd
+          sudo systemctl stop docker
+          sudo systemctl stop containerd
+          sudo systemctl stop mono-xsp4
+          sudo systemctl stop php7.4-fpm
+          sudo systemctl stop php8.0-fpm
+          sudo systemctl stop snapd
         
 
